@@ -1,12 +1,13 @@
+import { render } from "@testing-library/react";
 import { shallow } from "enzyme/build";
 import PrimeraApp from "../PrimeraApp";
 
 describe('pruebas en nuestro componente <PrimeraApp />', () => {
-    /* test('debe de mostrar el mensaje "Hola soy un saludo"', () => {
+     test('debe de mostrar el mensaje "Hola soy un saludo"', () => {
         const saludo = "Hola soy un saludo";
         const { getByText } = render(<PrimeraApp saludo={saludo} />);
         expect(getByText(saludo)).toBeInTheDocument();
-    }); */
+    }); 
     test('debe mostrar <PrimeraApp /> correctamente', () => {
         const saludo = "Hola soy un saludo!!!";
         const wrapper = shallow(<PrimeraApp saludo={saludo} />);
